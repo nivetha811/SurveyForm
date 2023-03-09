@@ -1,0 +1,70 @@
+<head>
+   <meta charset="utf-8">
+   <title>Survey Form</title> 
+<style>
+    body{text-align:center;
+    background-color: whitesmoke;
+    border-color: lightskyblue;
+    border-style: solid;
+        border-width: 50px;
+}
+
+    .center
+    {margin-left:auto;
+    margin-right:auto;}
+</style>
+</head>
+<body>  
+    <table class="center">
+        <form>
+        <thead>
+            <tr><h1>Survey Form</h1></tr>
+            <tr><p>Let us know how we can improve w3schools</p></tr>
+        </thead>
+        <tbody>
+            <form>
+            <tr>
+                <td> *Name: </td><td><input type="text" name="uname" placeholder="Enter your Name"></td>
+            </tr>
+            <tr>
+                <td>*Email-Id: </td><td><input type="email" name="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>*Age: </td><td><input type="number" placeholder="Select your age" required min="1" max="90"></td>
+            </tr>
+            <tr>
+                <td>Which option best describes your current role?</td><td><select id="role" name="role" form="role">
+                    <option value="Student">Student</option>
+                    <option value="Freelance">Freelance</option>
+                    <option value="Worker">Worker</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <td>*How likely is that you would recommend w3schools to a friend?</td>
+                <td><input type="radio" id="choice" name="choice" value="choice">
+                    <label for="Definetly">Definetly</label><br>
+                    <input type="radio" id="choice" name="choice" value="choice">
+                    <label for="Maybe">Maybe</label><br>
+                    <input type="radio" id="choice" name="choice" value="choice">
+                    <label for="Notsure">Notsure</label><br>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>What do you most like W3</td>
+                <td><select id="option" name="option" form="option">
+                    <option value="Quizz">Quizz</option>
+                    <option value="Excercize">Excercize</option>
+                    <option value="Guide">Guide</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <td>Things that should be improved in the future<br>(Check all thet apply)</td>
+                <td><input type="checkbox" id="project" name="project" value="project">
+                    <label for="project"> Front-end Projects</label><br>
+                    <input type="checkbox" id="project" name="project" value="project">
+                    <label for="project"> Back-end Projects</label><br>
+                    <input type="checkbox" id="project" name="project" value="project">
+                    <label for="project"> Data Visualization</label></td>            </tr>
+                    </tbody></table>
+                    <button type="submit" value="submit">Submit</button>
+                </form> 
